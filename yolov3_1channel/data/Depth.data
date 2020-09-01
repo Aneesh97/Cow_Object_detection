@@ -1,0 +1,4 @@
+classes=1
+train=data/Depthtrain.txt
+valid=data/Depthtest.txt
+names=data/cow.names
