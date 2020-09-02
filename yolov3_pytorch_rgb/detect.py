@@ -197,7 +197,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--cfg', type=str, default='cfg/yolov3-spp.cfg', help='*.cfg path')
     parser.add_argument('--names', type=str, default='data/cow.names', help='*.names path')
-    parser.add_argument('--weights', type=str, required=True, help='weights path')
+    parser.add_argument('--weights', type=str, default='backup/weights/best_RGB.pt', help='weights path')
     parser.add_argument('--source', type=str, default='RGB/images/valid', help='source')  # input file/folder, 0 for webcam
     parser.add_argument('--output', type=str, default='output', help='output folder')  # output folder
     parser.add_argument('--img-size', type=int, default=768, help='inference size (pixels)')
